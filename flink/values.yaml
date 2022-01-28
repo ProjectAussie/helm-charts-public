@@ -200,11 +200,11 @@ jobmanager:
   affinity: {}
   tolerations: []
   persistent:
-    enabled: false
+    enabled: true
     # https://kubernetes.io/docs/concepts/storage/persistent-volumes/#class-1
     storageClass:
-    size: 8Gi
-    mountPath: "/flink_state"
+    size: 16Gi
+    mountPath: "/"
   podManagementPolicy: Parallel
   annotations: {}
   # Example
